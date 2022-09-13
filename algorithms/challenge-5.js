@@ -1,5 +1,14 @@
 function filterList(arr) {
- 
- }
+    let integers=[]
+    for (let i=0; i<arr.length; i++){
+        if (typeof(arr[i]) == "string"){
+        } else{
+            integers.push(arr[i])
+        }
 
-  module.exports =filterList
+    }
+ 
+    return integers;
+}
+
+  module.exports = filterList
